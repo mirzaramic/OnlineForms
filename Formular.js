@@ -302,7 +302,7 @@ loadDataBtn.addEventListener("click", (event) => {
               return name.formname == searchButtonValue;
             });
             if (!name) {
-              alert("Inputted formtemplate name dont exist");
+              alert("Inputted formtemplate name with this id dont exist");
               break;
             }
           }
