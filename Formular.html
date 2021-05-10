@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>OnlineForms</title>
+    <link rel="stylesheet" type="text/css" href="Styles/formular_styles.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/style_for_both.css" />
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Header">
+        <a href="Administration.html">
+          <button class="Administration-button">Administration</button></a
+        >
+        <a href="Formular.html"
+          ><button class="Formular-button">Formular</button></a
+        >
+      </div>
+      <div class="searchbox-container">
+        <div class="searchbox">
+          <label class="Formular-name" for="searchbox">Formular name</label>
+          <input
+            type="text"
+            name="searchbox"
+            id="searchbox"
+            class="search-box"
+            placeholder="formular name"
+          />
+          <label for="IDs" class="ID-label">Data ID</label>
+          <input type="text" name="IDs" value="0" class="ID-field" id="IDs" />
+          <button class="Load-button button">Load data</button>
+          <button class="New-button button">New data</button>
+        </div>
+      </div>
+
+      <div class="formtemplate-container">
+        <div class="formular"></div>
+        <button class="formtemplate-save-button button">Save data</button>
+      </div>
+    </div>
+    <script src="Formular.js"></script>
+  </body>
+</html>

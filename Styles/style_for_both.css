@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  background-color: #fdb833;
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  flex-direction: column;
+
+  align-items: center;
+}
+.searchbox-container {
+  width: 900px;
+  height: 100px;
+  background-color: #ffd07b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+.formtemplate-container {
+  background-color: #ffd07b;
+  height: 250px;
+  width: 900px;
+  overflow: auto;
+  margin: 30px 0 0 0;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+.header {
+  margin: 10px 0 5px 100px;
+  align-self: flex-start;
+}
+.Administration-button {
+  cursor: pointer;
+  font-weight: bolder;
+  padding: 1px 0.5px 0.5px 0.5px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: #ffd07b;
+}
+.Formular-button {
+  margin: 0 0 0 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  padding: 1px 0.5px 0.5px 0.5px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: #ffd07b;
+}
+.search-button {
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.formtemplate-save-button {
+  overflow: auto;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0 10px 10px;
+}
+.Formular-name {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.search-box {
+  margin-left: 10px;
+}

@@ -1,0 +1,81 @@
+/* form style */
+.Element form {
+  display: flex;
+}
+/*padding between elements */
+.mainbox-type {
+  margin-right: 150px;
+}
+.box-type {
+  margin-right: 150px;
+}
+.element-label {
+  margin-right: 80px;
+
+  width: 80px;
+  float: left;
+}
+
+.input-field {
+  margin-right: 60px;
+}
+/* style for each element */
+.Element {
+  display: flex;
+  width: 880px;
+  margin: 0 5px;
+  justify-content: space-between;
+}
+/* element container(style for all label elements) */
+.Elements {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 100%;
+}
+/* Buttons plus,minus and radio (plus,minus) btns */
+.minus-button {
+  padding: 1px 3px 1px 3px;
+}
+.plus-button {
+  padding: 1px 3px 1px 3px;
+}
+.radiominus-button {
+  padding: 1px 3px 1px 3px;
+}
+.mainradiominus-button {
+  padding: 1px 3px 1px 3px;
+}
+
+.radioplus-button {
+  padding: 1px 3px 1px 3px;
+}
+.plusminus-button {
+  display: flex;
+  height: 20px;
+}
+.radioplusminus-button {
+  display: flex;
+  height: 20px;
+}
+
+/* box types dropdown list style */
+.Dropdown-boxlist {
+  display: flex;
+  flex-direction: column;
+}
+/* radio input style */
+.input-option {
+  height: 20px;
+  width: 150px;
+}
+/* radio label style */
+.textAndButtons {
+  display: flex;
+}
+img {
+  pointer-events: none;
+}

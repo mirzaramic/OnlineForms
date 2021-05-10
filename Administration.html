@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlineForms</title>
+    <link rel="stylesheet" type="text/css" href="Styles/style_for_both.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Styles/administration_styles.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="Header">
+        <a href="Administration.html">
+          <button class="Administration-button">Administration</button></a
+        >
+        <a href="Formular.html"
+          ><button class="Formular-button">Formular</button></a
+        >
+      </div>
+
+      <div class="searchbox-container">
+        <div class="searchbox">
+          <label class="Formular-name" for="searchbox">Formular name</label>
+          <input
+            type="text"
+            name="searchbox"
+            id="searchbox"
+            class="search-box"
+            placeholder="formular name"
+            value=""
+          />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+
+      <div class="formtemplate-container">
+        <div class="Elements" id="elements">
+          <div class="Element">
+            <form onSubmit="return false;">
+              <div class="label-input">
+                <label for="inputfield" class="element-label" id="elementlabel"
+                  >Element 1</label
+                >
+                <input
+                  type="text"
+                  name="inputfield"
+                  id="inputfield"
+                  class="input-field"
+                  value=""
+                />
+              </div>
+              <div class="Dropdown-boxlist">
+                <select class="box-type" onchange="SelectBox(event)">
+                  <option class="checkbox" value="checkbox">checkbox</option>
+                  <option class="radio-buttons" value="radio">
+                    radio buttons
+                  </option>
+                  <option class="textbox" value="textbox">textbox</option>
+                </select>
+              </div>
+              <div class="obligation-formcontainer">
+                <select class="obligation-form">
+                  <option class="numeric">numeric</option>
+                  <option class="mandatory">mandatory</option>
+                  <option class="none">none</option>
+                </select>
+              </div>
+            </form>
+            <div class="plusminus-button" id="plusminus">
+              <button
+                class="plus-button"
+                onclick="plusButton(event)"
+                id="plusbutton"
+              >
+                <img src="Images/plus-circle.svg" width="15px" height="15px" />
+              </button>
+              <button
+                class="minus-button"
+                id="minusbutton"
+                onclick="minusButton(event)"
+              >
+                <img src="Images/minus-circle.svg" width="15px" height="15px" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="formtemplate-save-button"
+          onclick="saveFormTemplate(event)"
+        >
+          Save formular template
+        </button>
+      </div>
+    </div>
+    <script src="administration.js"></script>
+  </body>
+</html>
